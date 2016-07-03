@@ -15,6 +15,7 @@
 		A81AA7A61D24516500F3F3F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81AA7A41D24516500F3F3F2 /* LaunchScreen.storyboard */; };
 		A81AA7B11D24516500F3F3F2 /* HW_23_GesturesTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A81AA7B01D24516500F3F3F2 /* HW_23_GesturesTestTests.m */; };
 		A81AA7BC1D24516500F3F3F2 /* HW_23_GesturesTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A81AA7BB1D24516500F3F3F2 /* HW_23_GesturesTestUITests.m */; };
+		A858CBA01D28115800DA3193 /* Ball.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A858CB9F1D28115800DA3193 /* Ball.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A81AA7B71D24516500F3F3F2 /* HW_23_GesturesTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW_23_GesturesTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81AA7BB1D24516500F3F3F2 /* HW_23_GesturesTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW_23_GesturesTestUITests.m; sourceTree = "<group>"; };
 		A81AA7BD1D24516500F3F3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A858CB9F1D28115800DA3193 /* Ball.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Ball.jpeg; path = ../../../Users/Romanos/Downloads/Ball.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A81AA7951D24516500F3F3F2 /* HW_23_GesturesTest */,
+				A858CB9E1D2810CC00DA3193 /* ImageFiles */,
 				A81AA7AF1D24516500F3F3F2 /* HW_23_GesturesTestTests */,
 				A81AA7BA1D24516500F3F3F2 /* HW_23_GesturesTestUITests */,
 				A81AA7941D24516500F3F3F2 /* Products */,
@@ -138,6 +141,15 @@
 				A81AA7BD1D24516500F3F3F2 /* Info.plist */,
 			);
 			path = HW_23_GesturesTestUITests;
+			sourceTree = "<group>";
+		};
+		A858CB9E1D2810CC00DA3193 /* ImageFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A858CB9F1D28115800DA3193 /* Ball.jpeg */,
+			);
+			name = ImageFiles;
+			path = HW_23_GesturesTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A858CBA01D28115800DA3193 /* Ball.jpeg in Resources */,
 				A81AA7A61D24516500F3F3F2 /* LaunchScreen.storyboard in Resources */,
 				A81AA7A31D24516500F3F3F2 /* Assets.xcassets in Resources */,
 				A81AA7A11D24516500F3F3F2 /* Main.storyboard in Resources */,
@@ -498,6 +511,7 @@
 				A81AA7C21D24516500F3F3F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A81AA7C31D24516500F3F3F2 /* Build configuration list for PBXNativeTarget "HW_23_GesturesTestTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +520,7 @@
 				A81AA7C51D24516500F3F3F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A81AA7C61D24516500F3F3F2 /* Build configuration list for PBXNativeTarget "HW_23_GesturesTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +529,7 @@
 				A81AA7C81D24516500F3F3F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

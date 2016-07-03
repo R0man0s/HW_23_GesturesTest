@@ -38,7 +38,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIGestureRecognizerDelegate>
+
+@property (weak, nonatomic) UIView* testView;
 
 @end
 
@@ -47,11 +49,67 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UIImageView* viewBall = [[UIImageView alloc] initWithFrame:CGRectMake(125, 125, 125, 125)];
+
+    viewBall.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin |
+    UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+    
+    viewBall.backgroundColor = [UIColor clearColor];
+    
+    UIImage* image1 = [UIImage imageNamed:@"Ball.jpeg"];
+    
+    viewBall.image = image1;
+    
+    [self.view addSubview:viewBall];
+    
+    self.testView = viewBall;
+    
+    UITapGestureRecognizer* tapGesture =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                         action:@selector(handleTap:)];
+    
+    [self.view addGestureRecognizer:tapGesture];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Gestures
+
+- (void) handleTap:(UITapGestureRecognizer*) tapGesture {
+    
+    NSLog(@"Tap: %@", NSStringFromCGPoint([tapGesture locationInView:self.view]));
+    
+    //UIView animateWithDuration:0.3f animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>
+    
+    CGFloat r = (float)(arc4random() % (int)(M_PI * 2*10000)) / 10000 - M_PI;
+    
+    [UIView animateWithDuration:0.8f
+                          delay:0
+                        options:UIViewAnimationOptionCurveLinear /*| UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse*/
+                     animations:^{
+                         self.testView.center = [tapGesture locationInView:self.view];
+                         //view.backgroundColor = [self randomColor];
+                         
+                         //CGAffineTransform scale = CGAffineTransformMakeScale(s, s);
+                         //¬CGAffineTransform rotation = CGAffineTransformMakeRotation(r);
+                         
+                         CGAffineTransform transform = CGAffineTransformMakeRotation(r);//CGAffineTransformConcat(scale, rotation);
+                         
+                         self.testView.transform = transform;
+                     }
+                     completion:^(BOOL finished) {
+                         NSLog(@"animation finished! %d", finished);
+                         NSLog(@"\nview frame = %@\nview bounds = %@", NSStringFromCGRect(self.testView.frame), NSStringFromCGRect(self.testView.bounds));
+                         
+                         
+                         //__weak UIView* v = view;
+                         //[self moveView:v];
+                     }];
 }
 
 @end
