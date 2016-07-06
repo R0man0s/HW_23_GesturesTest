@@ -15,8 +15,6 @@
  1. Добавьте квадратную картинку на вьюху вашего контроллера
  2. Если хотите, можете сделать ее анимированной
  
- Готово 
- 
  Студент
  
  3. По тачу анимационно передвигайте картинку со ее позиции в позицию тача
@@ -59,7 +57,7 @@
     
     viewBall.backgroundColor = [UIColor clearColor];
     
-    UIImage* image1 = [UIImage imageNamed:@"Ball.jpeg"];
+    UIImage* image1 = [UIImage imageNamed:@"ball.jpeg"];
     
     viewBall.image = image1;
     

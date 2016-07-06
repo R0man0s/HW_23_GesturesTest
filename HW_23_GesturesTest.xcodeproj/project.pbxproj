@@ -15,7 +15,7 @@
 		A81AA7A61D24516500F3F3F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81AA7A41D24516500F3F3F2 /* LaunchScreen.storyboard */; };
 		A81AA7B11D24516500F3F3F2 /* HW_23_GesturesTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A81AA7B01D24516500F3F3F2 /* HW_23_GesturesTestTests.m */; };
 		A81AA7BC1D24516500F3F3F2 /* HW_23_GesturesTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A81AA7BB1D24516500F3F3F2 /* HW_23_GesturesTestUITests.m */; };
-		A858CBA01D28115800DA3193 /* Ball.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A858CB9F1D28115800DA3193 /* Ball.jpeg */; };
+		A81AA7CA1D2D4B7F00F3F3F2 /* ball.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A81AA7C91D2D4B7F00F3F3F2 /* ball.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		A81AA7B71D24516500F3F3F2 /* HW_23_GesturesTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW_23_GesturesTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81AA7BB1D24516500F3F3F2 /* HW_23_GesturesTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW_23_GesturesTestUITests.m; sourceTree = "<group>"; };
 		A81AA7BD1D24516500F3F3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A858CB9F1D28115800DA3193 /* Ball.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Ball.jpeg; path = ../../../Users/Romanos/Downloads/Ball.jpeg; sourceTree = "<group>"; };
+		A81AA7C91D2D4B7F00F3F3F2 /* ball.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ball.jpeg; path = ImageFiles/ball.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,7 @@
 		A858CB9E1D2810CC00DA3193 /* ImageFiles */ = {
 			isa = PBXGroup;
 			children = (
-				A858CB9F1D28115800DA3193 /* Ball.jpeg */,
+				A81AA7C91D2D4B7F00F3F3F2 /* ball.jpeg */,
 			);
 			name = ImageFiles;
 			path = HW_23_GesturesTest;
@@ -255,7 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A858CBA01D28115800DA3193 /* Ball.jpeg in Resources */,
+				A81AA7CA1D2D4B7F00F3F3F2 /* ball.jpeg in Resources */,
 				A81AA7A61D24516500F3F3F2 /* LaunchScreen.storyboard in Resources */,
 				A81AA7A31D24516500F3F3F2 /* Assets.xcassets in Resources */,
 				A81AA7A11D24516500F3F3F2 /* Main.storyboard in Resources */,
